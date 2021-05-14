@@ -6,7 +6,8 @@ Serial myPort;
 
 String data="";
 
-float roll, pitch,yaw;
+float aX, aY, aZ;
+float roll, pitch, yaw;
 
 String comPort = "COM8";
 
@@ -41,7 +42,7 @@ void draw() {
   box (386, 40, 200); // Draw box
   textSize(25);
   fill(0, 255, 255);
-  text("www.HowToMechatronics.com", 0, 10, 101);
+  text("AltIMU-10 v5", 0, 10, 101);
   //delay(10);
   //println("ypr:\t" + angleX + "\t" + angleY); // Print the values to check whether we are getting proper values
 }
@@ -54,9 +55,12 @@ void serialEvent (Serial myPort) {
   if (data != null) {
     data = trim(data);
     // split the string at "/"
-    String items[] = split(data, '/');
+    String items[] = split(data, ',');
     if (items.length > 1) {
       //--- Roll,Pitch in degrees
+      aX = float(item[0]);
+        aX = float(item[0]);
+        aX = float(item[0]);
       roll = float(items[0]);
       pitch = float(items[1]);
       yaw = float(items[2]);
