@@ -14,30 +14,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c293001a-238e-419d-a9b8-06f3ff29ad79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/CourierNew36.vlw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/MPU6050 A.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/MPU6050 B.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/MPU6050 E.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/MPU6050 F.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/altimu-bottom.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/altimu-edge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/altimu-top.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/processing_rendered.pde" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_test/processing_test.pde" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/calibration.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/processing.PNG" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AltIMU-10-v5/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/CourierNew36.vlw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/MPU6050 A.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/MPU6050 B.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/MPU6050 E.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/MPU6050 F.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/altimu-bottom.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/altimu-edge.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/altimu-top.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/processing_rendered.pde" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_test/processing_test.pde" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,7 +73,7 @@
       <updated>1620991042699</updated>
       <workItem from="1620991045641" duration="412000" />
       <workItem from="1620991466763" duration="35000" />
-      <workItem from="1621031109708" duration="1111000" />
+      <workItem from="1621031109708" duration="1402000" />
     </task>
     <servers />
   </component>

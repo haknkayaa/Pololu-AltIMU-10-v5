@@ -9,12 +9,20 @@ burada derli toplu olması açısında açık kaynak olarak geliştiricilere sun
 
 Faydalı olması dileğiyle.
 
-### Calibration
+### Kalibrasyon
+
+İvme ölçer, gyro gibi sensörler oldukça hassas ve gürültülü çalışan modüllerdir.
+Doğrudan kullanımı stabilite sağlayamadığı için çeşitli filtreler uygulanmalıdır.
+
+Kalman filtresi, normalizasyon, ağırlıklı standart sapma gibi örnek 
+çalışmaları repo içerisinde
+bulabilirsiniz.
+
+Kalibrasyon örneği (Kalman Filter);
+![calibration](https://github.com/haknkayaa/Pololu-AltIMU-10-v5/blob/main/images/calibration.jpg)
 
 - Mavi çizgi sensörden okunan işlenmemiş ivme değeri (tek bir eksen)
 - Kırmızı çizgi Kalman filtresi sonrası hesaplanan değer (tek bir eksen)
-
-![calibration](https://github.com/haknkayaa/Pololu-AltIMU-10-v5/blob/main/images/calibration.jpg)
 
 ### Görselleştirme
 
@@ -23,6 +31,11 @@ için Processing 3.5.4 kullanılmıştır.
 
 "*visualization*" klasörü içerisinde processing projelerini çalıştırırken COM port seçimlerini
 düzenlemeyi unutmayın.
+
+Render ile görselleştirilmiş processing GUI ekran görüntüsü;
+
+![calibration](https://github.com/haknkayaa/Pololu-AltIMU-10-v5/blob/main/images/processing.PNG)
+
 
 ### Geliştirme Ortamı
  - MCU: Teensy 3.6 
