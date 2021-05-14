@@ -25,10 +25,22 @@ int readingValuesX[RESOLUTION];
 int readingValuesY[RESOLUTION];
 int readingValuesZ[RESOLUTION];
 
-// function prot
+#define MAG_RESOLUTION 10
+int mag_iterator = 0;
+int mag_sumValue[3] = {0, 0, 0};
+int mag_readingValuesX[MAG_RESOLUTION];
+int mag_readingValuesY[MAG_RESOLUTION];
+int mag_readingValuesZ[MAG_RESOLUTION];
+
+// function prototype
 AxisData calibreAccel(int aX, int aY, int aZ);
 
 AxisData calculateDegree(AxisData data);
+
+AxisData calibreMag(int magX, int magY, int magZ);
+
+void printSensorData();
+
 
 /// ====================================================================================================================
 /// Setup Fonksiyonu
@@ -73,8 +85,13 @@ void loop() {
     imu.read();
     mag.read();
 
+    printSensorData();
 
-//    char report[120];
+    delay(25);
+}
+
+void printSensorData() {
+    //    char report[120];
 //
 //    snprintf_P(report, sizeof(report),
 //               PSTR("A: %6d %6d %6d    M: %6d %6d %6d    G: %6d %6d %6d"),
@@ -86,6 +103,7 @@ void loop() {
 
     AxisData accelData = calibreAccel(imu.a.x, imu.a.y, imu.a.z);
     AxisData axisDegree = calculateDegree(accelData);
+    AxisData magData = calibreMag(mag.m.x, mag.m.y, mag.m.z);
 
     Serial.print("CalibreX:");
     Serial.print(accelData.x);
@@ -96,6 +114,7 @@ void loop() {
     Serial.print("CalibreZ:");
     Serial.print(accelData.z);
     Serial.print(",");
+
     Serial.print("DegreeX:");
     Serial.print(axisDegree.x);
     Serial.print(",");
@@ -106,11 +125,18 @@ void loop() {
     Serial.print(axisDegree.z);
     Serial.print(",");
 
+    Serial.print("MagX:");
+    Serial.print(magData.x);
+    Serial.print(",");
+    Serial.print("MagY:");
+    Serial.print(magData.y);
+    Serial.print(",");
+    Serial.print("MagZ:");
+    Serial.print(magData.z);
+    Serial.print(",");
+
     Serial.println();
-
-    delay(25);
 }
-
 
 /// Eksenlere gore accelerometerı kalibrasyon yapıp
 /// stabil sonuc dondurur.
@@ -161,4 +187,40 @@ AxisData calculateDegree(AxisData data) {
     degree.y = data.y / degreeResolution;
     degree.z = data.z / degreeResolution;
     return degree;
+}
+
+/// Eksenelere göre magnetometerı kalibre edip
+/// stabil sonuc dondurur
+/// \param magX
+/// \param magY
+/// \param magZ
+/// \return
+AxisData calibreMag(int magX, int magY, int magZ) {
+
+    AxisData result{};
+
+    // X axis
+    mag_sumValue[0] = mag_sumValue[0] - mag_readingValuesX[mag_iterator];
+    mag_readingValuesX[mag_iterator] = magX;
+    mag_sumValue[0] = mag_sumValue[0] + magX;
+
+    result.x = mag_sumValue[0] / RESOLUTION;
+
+    // Y axis
+    mag_sumValue[1] = mag_sumValue[1] - mag_readingValuesY[mag_iterator];
+    mag_readingValuesY[mag_iterator] = magY;
+    mag_sumValue[1] = mag_sumValue[1] + magY;
+
+    result.y = mag_sumValue[1] / RESOLUTION;
+
+    // Z axis
+    mag_sumValue[2] = mag_sumValue[2] - mag_readingValuesZ[mag_iterator];
+    mag_readingValuesZ[mag_iterator] = magZ;
+    mag_sumValue[2] = mag_sumValue[2] + magZ;
+
+    result.z = mag_sumValue[2] / RESOLUTION;
+
+    iterator = (iterator + 1) % RESOLUTION;
+
+    return result;
 }
