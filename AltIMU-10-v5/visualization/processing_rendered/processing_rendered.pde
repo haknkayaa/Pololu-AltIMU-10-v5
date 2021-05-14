@@ -10,7 +10,7 @@ String data = "";
 
 float aX, aY, aZ;
 float x, y, z;
-
+float magX, magY, magZ;
 
 
 PImage topside,downside,frontside,rightside;
@@ -48,6 +48,8 @@ void draw() {
     
     float roll = atan2(y, z) * 180.0 / PI;
     float pitch = atan2(-x, sqrt(y * y + z * z)) * 180.0 / PI;
+    
+    
     fill(#00FFFF);
     text("roll: " + int(roll) + " pitch: " + int(pitch) + "  Z:" + int(z), 0, 280);
    
@@ -77,18 +79,34 @@ void serialEvent(Serial myPort) {
             x = float(split(items[3], ':')[1]);
             y = float(split(items[4], ':')[1]);
             z = float(split(items[5], ':')[1]);
-
+            
+            magX = float(split(items[6], ':')[1]);
+            magY = float(split(items[7], ':')[1]);
+            magZ = float(split(items[8], ':')[1]);
+            
+            
+            
             print(aX);
             print("\t");
             print(aY);
             print("\t");
             print(aZ);
             print("\t");
+            
             print(x);
             print("\t");
             print(y);
             print("\t");
             print(z);
+            print("\t");
+            
+            print(magX);
+            print("\t");
+            print(magY);
+            print("\t");
+            print(magZ);
+
+            
             println("\t");
         }
     }
@@ -172,10 +190,10 @@ void drawCube() {
     
     float roll = atan2(y, z) * 180.0 / PI;
     float pitch = atan2(-x, sqrt(y * y + z * z)) * 180.0 / PI;
- 
+    float yaw = atan2(-magY,magX) * 180.0 / PI; 
   
     rotateX(radians(-roll));
-    //rotateY(radians(x));
+    //rotateY(radians(yaw));
     rotateZ(radians(pitch));
   
     topboard(topside);

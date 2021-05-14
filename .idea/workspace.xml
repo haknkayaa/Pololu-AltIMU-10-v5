@@ -14,11 +14,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c293001a-238e-419d-a9b8-06f3ff29ad79" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/Pololu-AltIMU-10-v5.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/CourierNew36.vlw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/MPU6050 A.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/MPU6050 B.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/MPU6050 E.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/MPU6050 F.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/altimu-bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/altimu-edge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/data/altimu-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_rendered/processing_rendered.pde" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AltIMU-10-v5/visualization/processing_test/processing_test.pde" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/calibration.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/processing.PNG" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/AltIMU-10-v5/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/CourierNew36.vlw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/MPU6050 A.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/MPU6050 B.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/MPU6050 E.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/MPU6050 F.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/altimu-bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/altimu-edge.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/data/altimu-top.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_rendered/processing_rendered.pde" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5/thirdparty/processing_test/processing_test.pde" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,16 +48,19 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:teensy36" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1sWawtNGW9LgIxwFEbLbcxh5VEE" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -47,15 +69,15 @@
     <property name="cf.first.check.clang-format" value="false" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="cmake.loaded.for.project" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="CMakeSettings" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
+    <property name="settings.editor.selected.configurable" value="CPPToolchains" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\haknk\Desktop\Roket\Software\Pololu-AltIMU-10-v5\images" />
+    </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -75,6 +97,7 @@
       <updated>1620991042699</updated>
       <workItem from="1620991045641" duration="412000" />
       <workItem from="1620991466763" duration="35000" />
+      <workItem from="1621031109708" duration="1111000" />
     </task>
     <servers />
   </component>
@@ -92,6 +115,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
