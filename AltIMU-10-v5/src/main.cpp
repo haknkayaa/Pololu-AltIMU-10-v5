@@ -34,6 +34,8 @@ AxisData calculateDegree(AxisData data);
 /// Setup Fonksiyonu
 /// Buradaki kodlar sadece 1 defa calısacaktır.
 void setup() {
+    Serial.begin(115200);
+
     Wire.begin();
 
 
