@@ -14,7 +14,7 @@ Faydalı olması dileğiyle.
 - Mavi çizgi sensörden okunan işlenmemiş ivme değeri (tek bir eksen)
 - Kırmızı çizgi Kalman filtresi sonrası hesaplanan değer (tek bir eksen)
 
-![alt text](http://url/to/img.png)
+![calibration](https://github.com/haknkayaa/Pololu-AltIMU-10-v5/blob/main/images/calibration.jpg)
 
 ### Görselleştirme
 
