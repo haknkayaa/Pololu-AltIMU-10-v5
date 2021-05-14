@@ -14,7 +14,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c293001a-238e-419d-a9b8-06f3ff29ad79" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Pololu-AltIMU-10-v5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Pololu-AltIMU-10-v5.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AltIMU-10-v5-Kalman-Filter/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/AltIMU-10-v5-Kalman-Filter/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,7 @@
       <updated>1620991042699</updated>
       <workItem from="1620991045641" duration="412000" />
       <workItem from="1620991466763" duration="35000" />
-      <workItem from="1621031109708" duration="1471000" />
+      <workItem from="1621031109708" duration="1770000" />
     </task>
     <servers />
   </component>
