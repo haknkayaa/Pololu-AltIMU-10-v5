@@ -34,7 +34,7 @@ düzenlemeyi unutmayın.
 
 Render ile görselleştirilmiş processing GUI ekran görüntüsü;
 
-![calibration](https://github.com/haknkayaa/Pololu-AltIMU-10-v5/blob/main/images/processing.mp4)
+![calibration](https://github.com/haknkayaa/Pololu-AltIMU-10-v5/blob/main/images/processing.PNG)
 
 
 ### Geliştirme Ortamı
