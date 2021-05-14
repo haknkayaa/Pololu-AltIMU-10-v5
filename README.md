@@ -1,2 +1,6 @@
-# Pololu-AltIMU-v5
- 
+ # Geliştirme Ortamı
+ - CMake
+ - CLion IDE,
+ - PlatformIO Core and CLI
+
+
