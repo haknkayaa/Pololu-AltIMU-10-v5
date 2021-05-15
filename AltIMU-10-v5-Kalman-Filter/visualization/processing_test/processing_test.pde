@@ -33,10 +33,10 @@ void draw() {
 
 
   
-  drawACube((1 * width)/8, (1 * height)/6, 0.5, -roll, yaw, pitch);
-  drawACube((3 * width)/8, (1 * height)/6, 0.5, gyroAngleX, gyroAngleY, gyroAngleZ);
-  drawACube((5 * width)/8, (1 * height)/6, 0.5, compAngleX, compAngleY, compAngleZ);
-  drawACube((7 * width)/8, (1 * height)/6, 0.5, kalAngleX, kalAngleY, kalAngleZ);
+  drawACube((1 * width)/8, (3 * height)/6, 0.5, roll, pitch, yaw);
+  drawACube((3 * width)/8, (3 * height)/6, 0.5, gyroAngleX, gyroAngleY, gyroAngleZ);
+  drawACube((5 * width)/8, (3 * height)/6, 0.5, compAngleX, compAngleY, compAngleZ);
+  drawACube((7 * width)/8, (3 * height)/6, 0.5, kalAngleX, kalAngleY, kalAngleZ);
 }
 
 void drawACube( int x, int y, float size, float angleX, float angleY, float angleZ) {
@@ -55,8 +55,8 @@ void drawACube( int x, int y, float size, float angleX, float angleY, float angl
   text("roll: " + int(angleX) + " pitch: " + int(angleY) + "  yaw:" + int(angleZ), -200, 200);
   
   rotateX(radians(angleX));
-  rotateY(radians(angleY));
-  rotateZ(radians(angleZ));
+  rotateZ(radians(angleY));
+  //rotateY(radians(angleZ));
   
   stroke(255);
  
